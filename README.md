@@ -1,6 +1,6 @@
 # SocialNetwok with Database and Login-System
 
-A social network system in JAVA with database in POSTGRES
+A social network system in JAVA with database using POSTGRES.
 The design is inspired by Facebook
 
 # Functionalities:
