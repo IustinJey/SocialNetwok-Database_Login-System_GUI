@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="354.0" prefWidth="380.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiex1.controller.friendProfileController">
+   <children>
+      <Button fx:id="closeButton" layoutX="141.0" layoutY="309.0" mnemonicParsing="false"  prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: white; -fx-background-radius: 30; -fx-border-color: #1877f2; -fx-border-radius: 30;" text="Close" textFill="#1877f2">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="169.0" fitWidth="303.0" layoutX="97.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/avatar_boy.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="emailAccount" layoutX="54.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="justinhociun@yahoo.com" textAlignment="CENTER" wrappingWidth="255.7445068359375" />
+      <Text fx:id="nameAccount" layoutX="35.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hociung Iustin" textAlignment="CENTER" wrappingWidth="293.54669189453125">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="friendsSince" fill="#767676" layoutX="8.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You are friends since 12/12/2022" textAlignment="CENTER" wrappingWidth="364.32379150390625" />
+   </children>
+</AnchorPane>

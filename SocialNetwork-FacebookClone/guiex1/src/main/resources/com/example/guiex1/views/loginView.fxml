@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="388.0" prefWidth="0.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiex1.controller.loginController">
+   <children>
+      <AnchorPane layoutX="436.0" prefHeight="388.0" prefWidth="358.0" style="-fx-background-color: white;">
+         <children>
+            <TextField fx:id="email" layoutX="107.0" layoutY="122.0" promptText="E-mail" style="-fx-background-radius: 30; -fx-background-color: white; -fx-border-color: #c5c5c5; -fx-border-radius: 30;" />
+            <Button fx:id="signUpButton" layoutX="105.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleSignUp" prefHeight="27.0" prefWidth="151.0" style="-fx-background-color: white; -fx-background-radius: 30; -fx-border-color: #1877f2; -fx-border-radius: 30;" text="Înregistrează-te" textFill="#1877f2">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Text fill="#717171" layoutX="87.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Autentifică-te" textAlignment="CENTER" wrappingWidth="188.74615478515625">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="password" layoutX="107.0" layoutY="160.0" promptText="Parolă" style="-fx-background-color: white; -fx-border-color: #c5c5c5; -fx-background-radius: 30; -fx-border-radius: 30;" />
+            <Text fill="#8c8c8c" layoutX="195.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ai uitat parola?">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Text>
+            <Text fill="#8c8c8c" layoutX="173.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sau">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Text>
+            <Button fx:id="logIn" layoutX="105.0" layoutY="236.0" mnemonicParsing="false" onAction="#handleSignIn" prefHeight="27.0" prefWidth="151.0" style="-fx-background-color: #1877f2; -fx-background-radius: 30;" text="Conectează-te" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <AnchorPane fx:id="errorLogIn" layoutX="74.0" layoutY="187.0" prefHeight="27.0" prefWidth="226.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-border-color: white;" visible="false">
+               <children>
+                  <Text fill="#fa5252" layoutX="36.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credentialele nu sunt corecte" />
+                  <ImageView fitHeight="17.0" fitWidth="60.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/info.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <AnchorPane layoutX="-5.0" prefHeight="388.0" prefWidth="442.0" style="-fx-background-color: #1877f2;">
+         <children>
+            <ImageView fitHeight="61.0" fitWidth="59.0" layoutX="185.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/facebook1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="171.0" layoutX="146.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/facebook2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="11.0" fitWidth="91.0" layoutX="196.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/meta.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="120.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Intră in contact cu peste 7 miliarde de utilizatori și împărtaseșteți toate momentele frumoase" textAlignment="CENTER" wrappingWidth="188.74615478515625" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

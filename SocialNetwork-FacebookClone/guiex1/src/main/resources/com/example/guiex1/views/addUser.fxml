@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="234.0" prefWidth="320.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiex1.controller.AddFriendController">
+   <children>
+      <TextField fx:id="email" layoutX="14.0" layoutY="117.0" prefHeight="27.0" prefWidth="291.0" promptText="E-mail" style="-fx-background-radius: 30; -fx-background-color: white; -fx-border-color: #c5c5c5; -fx-border-radius: 30;" />
+      <Button fx:id="sendRequest" layoutX="66.0" layoutY="182.0" mnemonicParsing="false" onAction="#addFriend" prefHeight="30.0" prefWidth="187.0" style="-fx-background-color: white; -fx-background-radius: 30; -fx-border-color: #1877f2; -fx-border-radius: 30;" text="Trimite cerere de prietenie" textFill="#1877f2">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="error" layoutX="26.0" layoutY="146.0" prefHeight="27.0" prefWidth="226.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-border-color: white;" visible="false">
+         <children>
+            <ImageView fitHeight="17.0" fitWidth="60.0" layoutX="40.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/info.png" />
+               </image>
+            </ImageView>
+            <Text fill="#fa5252" layoutX="62.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Actiunea nu poate fi realizata" />
+         </children>
+      </AnchorPane>
+      <Text fill="#6e6e6e" layoutX="15.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Introduce-ți email-ul persoanei ce doriti sa ii trimiteti cerere de prietenie" wrappingWidth="298.555908203125" />
+      <ImageView fitHeight="50.0" fitWidth="52.0" layoutX="131.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/fr.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
