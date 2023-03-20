@@ -6,6 +6,7 @@ The JavaFX Social Network project is a user-friendly application that allows use
 - JavaFX
 - SceneBuilder for JavaFX
 - PostgreSQL (pgAdmin)
+- Gradle
 
 # Functionalities:
 - Log In or Register Account
